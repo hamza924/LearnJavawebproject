@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>LOGIN PAGE</title>
+<link rel="stylesheet"
+      href="./css/style.css"
+      type="text/css"/>
+      
+      
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+      
+      
+      <script type="text/javascript">
+ $(document).ready(function() {
+			var form = $('#form1');
+			
+			form.submit(function (e) {
+			 e.preventDefault();
+			$.ajax({
+			type: form.attr('method'),
+			url: form.attr('action'),
+			data: form.serialize(),
+			success: function (data) {
+			var result=data;
+			$('#result1').text(result);
+			alert(result);
+			}
+			});
+			 
+			return false;
+			});
+			
+			var form1 = $('#form2');
+			
+			form1.submit(function (e) {
+			 e.preventDefault();
+			$.ajax({
+			type: form1.attr('method'),
+			url: form1.attr('action'),
+			data: form1.serialize(),
+			success: function (data) {
+			var result=data;
+			$('#result2').text(result);
+			alert(result);
+			}
+			});
+			 
+			return false;
+			});
+			
+			var form2 = $('#form3');
+			form2.submit(function (e) {
+			 e.preventDefault();
+			$.ajax({
+			type: form2.attr('method'),
+			url: form2.attr('action'),
+			data: form2.serialize(),
+			success: function (data) {
+			var result=data;
+			//$('.result').text(result);
+			alert(result);
+			}
+			});
+			 
+			return false;
+			});
+			
+			var form3 = $('#form4');
+			form3.submit(function (e) {
+			 e.preventDefault();
+			$.ajax({
+			type: form3.attr('method'),
+			url: form3.attr('action'),
+			data: form3.serialize(),
+			success: function (data) {
+			var result=data;
+			//$('.result').text(result);
+			alert(result);
+			}
+			});
+			 
+			return false;
+			});
+			
+			var form4 = $('#form5');
+			form4.submit(function (e) {
+			 e.preventDefault();
+			$.ajax({
+			type: form4.attr('method'),
+			url: form4.attr('action'),
+			data: form4.serialize(),
+			success: function (data) {
+			var result=data;
+			$('.result').text(result);
+			alert(result);
+			}
+			});
+			 
+			return false;
+			});
+			
+			var form6 = $('#form6');
+			form6.submit(function (e) {
+			 e.preventDefault();
+			$.ajax({
+			type: form6.attr('method'),
+			url: form6.attr('action'),
+			data: form6.serialize(),
+			success: function (data) {
+			var result=data;
+			//$('.result').text(result);
+			alert(result);
+			}
+			});
+			 
+			return false;
+			});
+			
+			var form7 = $('#form7');
+			form7.submit(function (e) {
+			 e.preventDefault();
+			$.ajax({
+			type: form7.attr('method'),
+			url: form7.attr('action'),
+			data: form7.serialize(),
+			success: function (data) {
+			var result=data;
+			//$('.result').text(result);
+			alert(result);
+			}
+			});
+			 
+			return false;
+			});
+			
+			
+			
+			
+			
+ });
+			</script>
+</head>
+<body>
+<h1 class ="heading">Learn JAVA!!</h1>
+	<h2 class ="heading2">SIGN UP </h2>
+	
+	<div class = "outerbody">
+		<div class  = "innerbody">
+		
+			<div class = "outersignup">
+			<div class = "innersignup">
+			<form action="./signup1" method = "post" id = "form1" >
+			
+			<label>Username</label> <br> <input type = "text" name ="username" class = "textbox"><br> 
+			<label>Password</label> <br> <input type = "password" name = "pass" class = "textbox"><br>
+			<label>Email</label><br><input type = "email" name = "email" class = "textbox"><br>
+			<input type = "submit" value = "SignUp">
+			<div id = "result1"></div>
+			</form>
+			<p class ="text"> Have An Account? </p> <a href = "login.html" class = "log">Login In</a>
+			</div>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+	
+	<div class="footer">
+  <p>Developed by Hamza Iqbal </p>
+</div>
+</body>
+</html>
