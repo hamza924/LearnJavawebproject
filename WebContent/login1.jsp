@@ -26,8 +26,8 @@
 	
 	//String newpass = "//sql4.freemysqlhosting.net/";
 	
-	String user = "sql4410247";
-	String pass1 = "it6Zh3dibg";
+	String user = "sql4421337";
+	String pass1 = "27XkJ36v8S";
 	String url = "jdbc:mysql://sql4.freemysqlhosting.net:3306/"+user;
 	java.sql.Connection con = DriverManager.getConnection(url,user,pass1);
 	Statement st= con.createStatement();

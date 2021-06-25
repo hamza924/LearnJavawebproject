@@ -50,8 +50,8 @@ public class signup1 extends HttpServlet {
 			try
 				{
 					Class.forName("com.mysql.jdbc.Driver");
-					String user = "sql4410247";
-					String passwrd="it6Zh3dibg";
+					String user = "sql4421337";
+					String passwrd="27XkJ36v8S";
 					String url = "jdbc:mysql://sql4.freemysqlhosting.net:3306/"+user;
 					//String url = "jdbc:mysql://mudfoot.doc.stu.mmu.ac.uk:6306/"+user;
 					Connection conn = DriverManager.getConnection(url,user,passwrd);

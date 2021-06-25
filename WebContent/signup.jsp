@@ -54,9 +54,9 @@ if(uname1 !=null && pass1 !=null && email !=null ){
 	try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
-			String user = "iqbalh";
-			String passwrd="kLopvert2";
-			String url = "jdbc:mysql://mudfoot.doc.stu.mmu.ac.uk:6306/"+user;
+			String user = "freedbtech_JavaProject";
+			String passwrd="Javaproj";
+			String url = "jdbc:mysql://freedb.tech:3306/"+user;
 			Connection conn = DriverManager.getConnection(url,user,passwrd);
 			Statement st=conn.createStatement();
 			
